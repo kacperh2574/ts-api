@@ -28,6 +28,6 @@ API returns files in JSON format. When sending request to specific ID, specify t
 
 **GET** /products/{id} - returns the specified product
 
-**PATCH** /products/{id} - updates the product with the specified fields
+**PUT** /products/{id} - updates the product with the specified fields
 
 **DELETE** /products/{id} - deletes the specified product
