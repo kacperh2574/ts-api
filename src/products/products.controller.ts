@@ -16,8 +16,8 @@ export class ProductsController {
 
   @Post()
   addProduct(@Body('name') prodName: string, @Body('price') prodPrice: number) {
-    const generatedId = this.productsService.insertProduct(prodName, prodPrice);
-    return { id: generatedId };
+    this.productsService.insertProduct(prodName, prodPrice);
+    return 'New product created';
   }
 
   @Get()
@@ -37,7 +37,7 @@ export class ProductsController {
     @Body('price') prodPrice: number,
   ) {
     this.productsService.updateProduct(prodId, prodName, prodPrice);
-    return null;
+    return this.productsService.getSingleProduct(prodId);
   }
 
   @Delete(':id')
