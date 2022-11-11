@@ -1,7 +1,7 @@
 {
   "name": "ts-api",
-  "version": "0.0.1",
-  "description": "Simple API",
+  "version": "0.1.1",
+  "description": "Simple API (without database)",
   "author": "Kacper Hanuszewicz",
   "private": false,
   "license": "MIT",
